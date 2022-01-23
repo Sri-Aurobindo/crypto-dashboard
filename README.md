@@ -6,6 +6,8 @@
 
 - Input box to change the number of currencies to display on the dashboard (count)
 
+- Added periodically calling api function using setInterval for the period of 5 minutes.
+
 # website
 - Updated Dashboard
 
