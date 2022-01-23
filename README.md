@@ -9,4 +9,4 @@
 # website
 - Updated Dashboard
 
-![Dashboard](images/newdashboard.png)
+![Dashboard](images/newDashboard.png)
