@@ -1,4 +1,4 @@
-
+import axios from 'axios';
 import React from 'react';
 import './coin.css'
 const coin = ({name,image,symbol,price,volume,percentageChange,marketCap}) => {
