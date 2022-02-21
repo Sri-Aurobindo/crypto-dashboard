@@ -147,6 +147,9 @@ function sortCurrency(value){
       setPriceSort("sort icon")
       setPcSort("sort icon")
       break;
+      
+      default:
+        console.log(`Sorry, we are out`);
   }
 }
 
