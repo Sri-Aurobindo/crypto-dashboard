@@ -68,16 +68,16 @@ function sortCurrency(value){
   switch(value){
     case "mc" :
       //sorting currency value based on market_cap by calling api and changing order state
-      if(mcsort == "sort icon"){
+      if(mcsort === "sort icon"){
         setMcSort("angle double down icon red")
         //setCoins(coins.sort((a,b)=>b.market_cap - a.market_cap ))
         setOrder("market_cap_desc")
       }
-      else if(mcsort == "angle double down icon red"){
+      else if(mcsort === "angle double down icon red"){
         setMcSort("angle double up icon green")
         //setCoins(coins.sort((a,b)=>a.market_cap - b.market_cap))
         setOrder("market_cap_asc")
-      }else if(mcsort =="angle double up icon green")
+      }else if(mcsort ==="angle double up icon green")
       {
         setMcSort("angle double down icon red")
         //setCoins(coins.sort((a,b)=>b.market_cap - a.market_cap ))
@@ -90,14 +90,14 @@ function sortCurrency(value){
     
     case "pc" :
       //sorting currency value based on percentage_change by sort function (because order parameter supports only market_cap and volume)
-      if(pcsort == "sort icon"){
+      if(pcsort === "sort icon"){
         setPcSort("angle double down icon red")
         setCoins(coins.sort((a,b)=>b.price_change_percentage_24h - a.price_change_percentage_24h ))
       }
-      else if(pcsort == "angle double down icon red"){
+      else if(pcsort === "angle double down icon red"){
         setPcSort("angle double up icon green")
         setCoins(coins.sort((a,b)=>a.price_change_percentage_24h - b.price_change_percentage_24h))
-      }else if(pcsort =="angle double up icon green")
+      }else if(pcsort ==="angle double up icon green")
       {
         setPcSort("angle double down icon red")
         setCoins(coins.sort((a,b)=>b.price_change_percentage_24h - a.price_change_percentage_24h ))
@@ -109,14 +109,14 @@ function sortCurrency(value){
       
     case "price" :
       //sorting currency value based on price using  sorting function (because order parameter supports only market_cap and volume)
-      if(pricesort == "sort icon"){
+      if(pricesort === "sort icon"){
         setPriceSort("angle double down icon red")
         setCoins(coins.sort((a,b)=>b.current_price - a.current_price ))
       }
-      else if(pricesort == "angle double down icon red"){
+      else if(pricesort === "angle double down icon red"){
         setPriceSort("angle double up icon green")
         setCoins(coins.sort((a,b)=>a.current_price - b.current_price ))
-      }else if(pricesort =="angle double up icon green")
+      }else if(pricesort ==="angle double up icon green")
       {
         setPriceSort("angle double down icon red")
         setCoins(coins.sort((a,b)=>b.current_price - a.current_price ))
@@ -128,16 +128,16 @@ function sortCurrency(value){
     
     case "volume":
       //sorting currency value based on volume by calling api and changing order state
-      if(volumesort == "sort icon"){
+      if(volumesort === "sort icon"){
         setVolumeSort("angle double down icon red")
         //setCoins(coins.sort((a,b)=>b.total_volume - a.total_volume ))
         setOrder("volume_desc")
       }
-      else if(volumesort == "angle double down icon red"){
+      else if(volumesort === "angle double down icon red"){
         setVolumeSort("angle double up icon green")
         //setCoins(coins.sort((a,b)=>a.total_volume - b.total_volume ))
         setOrder("volume_asc")
-      }else if(volumesort =="angle double up icon green")
+      }else if(volumesort ==="angle double up icon green")
       {
         setVolumeSort("angle double down icon red")
         //setCoins(coins.sort((a,b)=>b.total_volume - a.total_volume ))
