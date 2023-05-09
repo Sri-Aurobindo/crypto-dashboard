@@ -12,8 +12,8 @@ import AWS from 'aws-sdk';
 AWS.config.update({
   region: 'us-west-1',
   endpoint: 'dynamodb.us-west-1.amazonaws.com',
-  accessKeyId: 'AKIAWH5DHE6LZB4GRDND',
-  secretAccessKey: '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'
+  accessKeyId: '',
+  secretAccessKey: ''
 });
 
 const dynamodb = new AWS.DynamoDB();
